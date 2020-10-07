@@ -1,0 +1,77 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: registration
+  profiles:
+    active: #spring.profiles.active#
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  messages:
+    basename: i18n/messages
+  #    fallback-to-system-locale: false
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.StdDateFormat
+    default-property-inclusion: non_null
+    serialization:
+      fail-on-empty-beans: false
+  resources:
+    add-mappings: false
+  mvc:
+    throw-exception-if-no-handler-found: true
+    async:
+      request-timeout: 60000
+  main:
+    allow-bean-definition-overriding: true
+  flyway:
+    baseline-on-migrate: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 100MB
+  http:
+    encoding:
+      force: true
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /
+      path-mapping:
+        health: health
+        info: info
+        prometheus: prometheus
+  endpoint:
+    health:
+      show-details: always
+
+app:
+  application:
+    name: ^project.artifactId^
+    version: ^project.version^
+    timestamp: ^timestamp^
+  async:
+    core-pool-size: 4
+    max-pool-size: 100
+    queue-capacity: 10000
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET, PUT, POST, DELETE, OPTIONS
+    allowed-headers: "*"
+    exposed-headers: X-Total-Count, filename
+    allow-credentials: true
+    max-age: 1800
