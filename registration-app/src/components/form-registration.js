@@ -195,12 +195,6 @@ export default class FormRegistration extends Component {
     }
   }
 
-  showAllFieldsValidated() {
-    setTimeout(() => {
-      this.setState({ allFieldsValidated: false });
-    }, 1500);
-  }
-
   setGender(event) {
     this.setState({
       gender: {
@@ -225,7 +219,7 @@ export default class FormRegistration extends Component {
       <div classnames="row">
         <div classnames="col-12">
           <div
-            className={classnames("jumbotron mt-3", {
+            className={classnames("jumbotron mt-2", {
               grayOut: allFieldsValidated,
             })}
           >
@@ -446,7 +440,7 @@ export default class FormRegistration extends Component {
             </form>
           </div>
         </div>
-        <div classnames="col-lg">
+        <div classnames="col-12">
           <div
             className={classnames(
               "jumbotron",
