@@ -4,6 +4,7 @@ import Consts from "../utils/const";
 import { validateFields } from "../utils/validate-fields";
 import classnames from "classnames";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 const initialState = {
   phone: {
     value: "",
@@ -38,7 +39,7 @@ const initialState = {
   submitCalled: false,
   allFieldsValidated: false,
 };
-export default class FormRegistration extends Component {
+export default class RegistrationPage extends Component {
   constructor(props) {
     super(props);
     this.state = initialState;
@@ -453,9 +454,14 @@ export default class FormRegistration extends Component {
             )}
 
             {allFieldsValidated && (
-              <button type="button" class="btn btn-primary btn-lg btn-block">
-                Login
-              </button>
+              <Link to="/login">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg btn-block"
+                >
+                  Login
+                </button>
+              </Link>
             )}
           </div>
         </div>
