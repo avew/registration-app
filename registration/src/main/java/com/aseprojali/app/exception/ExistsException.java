@@ -12,13 +12,11 @@ import org.zalando.problem.Status;
 
 import javax.annotation.concurrent.Immutable;
 
-import static com.aseprojali.app.exception.ErrorConstants.EMAIL_EXISTS_TYPE;
-
 @Immutable
-public class EmailExistsException extends AbstractThrowableProblem {
+public class ExistsException extends AbstractThrowableProblem {
 
-    public EmailExistsException(String message) {
-        super(EMAIL_EXISTS_TYPE, "Warning", Status.CONFLICT, message);
+    public ExistsException(String message) {
+        super(ErrorConstants.EXISTS_TYPE, "Warning", Status.CONFLICT, message);
 
     }
 

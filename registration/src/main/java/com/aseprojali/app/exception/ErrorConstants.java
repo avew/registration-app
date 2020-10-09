@@ -11,8 +11,7 @@ public class ErrorConstants {
     public static final URI DEFAULT_TYPE = URI.create(PROBLEM_BASE_URL + "/problem-with-message");
     public static final URI CONSTRAINT_VIOLATION_TYPE = URI.create(PROBLEM_BASE_URL + "/constraint-violation");
     public static final URI NOT_FOUND_TYPE = URI.create(PROBLEM_BASE_URL + "/not-found");
-    public static final URI PHONE_EXISTS_TYPE = URI.create(PROBLEM_BASE_URL + "/phone-exists");
-    public static final URI EMAIL_EXISTS_TYPE = URI.create(PROBLEM_BASE_URL + "/email-exists");
+    public static final URI EXISTS_TYPE = URI.create(PROBLEM_BASE_URL + "/exists");
 
     private ErrorConstants() {
     }

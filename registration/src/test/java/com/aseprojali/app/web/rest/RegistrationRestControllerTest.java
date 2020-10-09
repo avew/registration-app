@@ -65,6 +65,5 @@ public class RegistrationRestControllerTest extends AbstractTest {
                 .andDo(print())
                 .andExpect(status().isBadRequest())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_PROBLEM_JSON_VALUE));
-
     }
 }
