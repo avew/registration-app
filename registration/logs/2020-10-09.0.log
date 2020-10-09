@@ -1,0 +1,44 @@
+2020-10-09 11:31:06.914 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - Starting DemoRegistrationApplication on LAPTOP-1VF64463 with PID 9028 (D:\WORK\TEST\registration\target\classes started by Pajakku in D:\WORK\TEST\registration)
+2020-10-09 11:31:06.916 [restartedMain] DEBUG c.a.app.DemoRegistrationApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-09 11:31:06.916 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - The following profiles are active: swagger,dev
+2020-10-09 11:31:08.136 [restartedMain] DEBUG c.a.app.config.WebConfiguration - REGISTERING CORS FILTER
+2020-10-09 11:31:10.853 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - Started DemoRegistrationApplication in 4.379 seconds (JVM running for 5.307)
+2020-10-09 11:31:10.855 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - 
+----------------------------------------------------------
+	APPLICATION 'registration' ^^ VERSION: '0.0.1-SNAPSHOT' ^^ BUILD TIME: 20201008-1205 
+	IS RUNNING! ACCESS URLs:
+	LOCAL: 		http://localhost:8070
+	EXTERNAL: 	http://172.26.176.1:8070
+	PROFILE(S): 	[swagger, dev]
+----------------------------------------------------------
+2020-10-09 12:27:20.273 [main] INFO  c.a.a.w.r.RegistrationRestControllerTest - Starting RegistrationRestControllerTest on LAPTOP-1VF64463 with PID 8656 (started by Pajakku in D:\WORK\TEST\registration)
+2020-10-09 12:27:20.273 [main] DEBUG c.a.a.w.r.RegistrationRestControllerTest - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-09 12:27:20.274 [main] INFO  c.a.a.w.r.RegistrationRestControllerTest - No active profile set, falling back to default profiles: default
+2020-10-09 12:27:21.602 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.200 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 1.4.199.
+2020-10-09 12:27:24.143 [main] DEBUG c.a.app.config.WebConfiguration - REGISTERING CORS FILTER
+2020-10-09 12:27:24.408 [main] INFO  c.a.a.w.r.RegistrationRestControllerTest - Started RegistrationRestControllerTest in 4.512 seconds (JVM running for 5.342)
+2020-10-09 12:27:24.639 [main] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316666, firstname=Asep, lastname=Rojali, dob=2020-01-30, gender=Male, email=aseprojali@gmail.com)
+2020-10-09 12:27:24.900 [main] WARN  o.z.p.spring.common.AdviceTraits - Bad Request: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.aseprojali.app.web.rest.RegistrationRestController.save(com.aseprojali.app.web.dto.RegistrationDTO): [Field error in object 'registrationDTO' on field 'phone': rejected value [123123]; codes [Pattern.registrationDTO.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@c6bf8d9,^(^\+62\s?|^0)(\d{3,4}-?){2}\d{3,4}$]; default message [Please enter valid indonesian phone number]] 
+2020-10-09 12:27:33.786 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - Starting DemoRegistrationApplication on LAPTOP-1VF64463 with PID 22812 (D:\WORK\TEST\registration\target\classes started by Pajakku in D:\WORK\TEST\registration)
+2020-10-09 12:27:33.788 [restartedMain] DEBUG c.a.app.DemoRegistrationApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-09 12:27:33.789 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - The following profiles are active: swagger,dev
+2020-10-09 12:27:35.393 [restartedMain] DEBUG c.a.app.config.WebConfiguration - REGISTERING CORS FILTER
+2020-10-09 12:27:37.955 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - Started DemoRegistrationApplication in 4.528 seconds (JVM running for 4.922)
+2020-10-09 12:27:37.957 [restartedMain] INFO  c.a.app.DemoRegistrationApplication - 
+----------------------------------------------------------
+	APPLICATION 'registration' ^^ VERSION: '0.0.1-SNAPSHOT' ^^ BUILD TIME: 2020-10-09T05:27:26Z 
+	IS RUNNING! ACCESS URLs:
+	LOCAL: 		http://localhost:8070
+	EXTERNAL: 	http://172.26.176.1:8070
+	PROFILE(S): 	[swagger, dev]
+----------------------------------------------------------
+2020-10-09 12:53:32.328 [http-nio-8070-exec-4] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316666, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojali@gmail.com)
+2020-10-09 12:53:32.454 [http-nio-8070-exec-4] WARN  o.z.p.spring.common.AdviceTraits - Conflict: Warning: Phone 085294316666 already registered
+2020-10-09 12:53:39.027 [http-nio-8070-exec-3] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316665, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojali@gmail.com)
+2020-10-09 12:53:39.046 [http-nio-8070-exec-3] WARN  o.z.p.spring.common.AdviceTraits - Conflict: Warning: Email aseprojali@gmail.com already registered
+2020-10-09 12:53:42.286 [http-nio-8070-exec-2] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316665, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojalis@gmail.com)
+2020-10-09 13:21:45.355 [http-nio-8070-exec-6] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316666, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojali@gmail.com)
+2020-10-09 13:41:54.749 [http-nio-8070-exec-9] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316666, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojali@gmail.com)
+2020-10-09 13:41:54.756 [http-nio-8070-exec-9] WARN  o.z.p.spring.common.AdviceTraits - Conflict: Warning: Phone 085294316666 already registered
+2020-10-09 13:41:59.704 [http-nio-8070-exec-1] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316665, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojalis@gmail.com)
+2020-10-09 13:42:59.058 [http-nio-8070-exec-3] DEBUG c.a.a.s.r.i.RegistrationServiceImpl - REQ SAVE: Registration(id=null, phone=085294316666, firstname=Asep, lastname=Rojali, dob=null, gender=Male, email=aseprojali@gmail.com)
