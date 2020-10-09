@@ -11,7 +11,7 @@ spring:
     include: swagger
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/registration
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}
     username: ${DB_USER}
     password: ${DB_PASSWORD}
     hikari:

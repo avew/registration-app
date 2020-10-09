@@ -1,2 +1,2 @@
 cd registration-app
-yarn start
+npm install && yarn start
